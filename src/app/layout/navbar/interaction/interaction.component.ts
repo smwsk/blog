@@ -10,6 +10,7 @@ export class InteractionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("InteractionComponent Init");
   }
 
 }

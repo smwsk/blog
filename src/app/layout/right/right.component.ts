@@ -10,6 +10,7 @@ export class RightComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("RightComponent Init");
   }
 
 }

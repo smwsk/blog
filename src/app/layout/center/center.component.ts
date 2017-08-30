@@ -10,6 +10,7 @@ export class CenterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("CenterComponent Init");
   }
 
 }

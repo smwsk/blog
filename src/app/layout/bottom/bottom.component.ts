@@ -10,6 +10,7 @@ export class BottomComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("BottomComponent Init");
   }
 
 }

@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import {LoginModelService} from './login/login-model.service';
 import {LoginService} from './login/login.service';
 import {LoginComponent} from "./login/login.component";
-import {AlertModule, BsModalService} from "ngx-bootstrap";
+import {BsModalService, ModalModule} from "ngx-bootstrap";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   imports: [
     CommonModule,
-    AlertModule.forRoot()
+    ModalModule.forRoot(),
+    FormsModule
   ],
   declarations: [
     LoginComponent
