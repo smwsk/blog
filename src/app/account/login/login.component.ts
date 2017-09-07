@@ -2,6 +2,7 @@ import {Component, OnInit, TemplateRef} from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import {BsModalRef} from "ngx-bootstrap";
 import {AboutComponent} from "../../layout/navbar/about/about.component";
+import {DataService} from "../../utils/data.service";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,8 +14,17 @@ export class LoginComponent implements OnInit {
   password: string;//密码
   rememberMe: boolean;//记着密码
   bsModalRef: BsModalRef;
-  constructor(private modalService: BsModalService) {}
+  constructor(private modalService: BsModalService,
+              private dataService: DataService) {}
   ngOnInit() {
-    console.log("LoginComponent Init");
+
+  }
+
+  login (){
+    console.log("login");
+  }
+
+  Remember (event: any){
+    console.log(this.username)
   }
 }

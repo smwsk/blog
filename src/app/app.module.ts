@@ -9,6 +9,8 @@ import {LoginService} from "./account/login/login.service";
 import {AlertModule} from 'ngx-bootstrap';
 import {LayoutModule} from "./layout/layout.module";
 import {router} from "./app.route";
+import {DataService} from "./utils/data.service";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -19,11 +21,14 @@ import {router} from "./app.route";
     AccountModule,
     RouterModule.forRoot(router),//路由
     AlertModule.forRoot(),
-    LayoutModule
+    LayoutModule,
+    HttpModule,
+
   ],
   providers: [
     LoginModelService,
-    LoginService
+    LoginService,
+    DataService,
   ],
   bootstrap: [AppComponent],
   exports: [
