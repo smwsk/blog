@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {DataService} from "../../../utils/data.service";
-import {addResourceUrl, deleteResourceUrl, getResourceUrl} from "../../../app.constants";
+import {DataService} from "../../../../utils/data.service";
+import {addResourceUrl, deleteResourceUrl, getResourceUrl} from "../../../../app.constants";
 
 @Component({
   selector: 'app-share',

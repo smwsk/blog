@@ -1,7 +1,7 @@
 import {Component, OnInit, TemplateRef} from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import {BsModalRef} from "ngx-bootstrap";
-import {AboutComponent} from "../../layout/navbar/about/about.component";
+import {AboutComponent} from "../../front/layout/navbar/about/about.component";
 import {DataService} from "../../utils/data.service";
 @Component({
   selector: 'app-login',

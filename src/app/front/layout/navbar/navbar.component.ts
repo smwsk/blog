@@ -1,6 +1,6 @@
 import {Component, OnInit, TemplateRef} from '@angular/core';
 import {BsModalRef, BsModalService} from "ngx-bootstrap";
-import {LoginComponent} from "../../account/login/login.component";
+import {LoginComponent} from "../../../account/login/login.component";
 
 @Component({
   selector: 'app-navbar',

@@ -5,7 +5,7 @@ import {HomeComponent} from "./home/home.component";
 import {ArticleComponent} from "./article/article.component";
 import {InteractionComponent} from "./interaction/interaction.component";
 import {RouterModule} from "@angular/router";
-import {router} from "../../app.route";
+import {router} from "../../../app.route";
 import {ShareComponent} from "./share/share.component";
 
 @NgModule({

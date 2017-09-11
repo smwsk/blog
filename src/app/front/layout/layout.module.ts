@@ -3,21 +3,23 @@ import { CommonModule } from '@angular/common';
 import {NavbarComponent} from "./navbar/navbar.component";
 import {BottomComponent} from "./bottom/bottom.component";
 import {CenterComponent} from "./center/center.component";
-import {RightComponent} from "./right/right.component";
 import {NavbarModule} from "./navbar/navbar.module";
 import {RouterModule} from "@angular/router";
+import {RightModule} from "./right/right.module";
+import {RightComponent} from "./right/right.component";
 
 @NgModule({
   imports: [
     CommonModule,
     NavbarModule,
-    RouterModule
+    RouterModule,
+    RightModule
   ],
   declarations: [
     BottomComponent,
     CenterComponent,
-    RightComponent,
-    NavbarComponent
+    NavbarComponent,
+    RightComponent
   ],
   exports: [
     NavbarComponent,
