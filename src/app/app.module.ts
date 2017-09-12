@@ -22,7 +22,7 @@ import {AdminModule} from "./admin/admin.module";
   imports: [
     BrowserModule, //浏览器模块
     AccountModule, //用户模块
-   // RouterModule.forRoot(router),//路由模块
+    RouterModule.forRoot(router),//路由模块
     AlertModule.forRoot(), //弹窗模块
     HttpModule, //http请求模块
     FrontModule,//前台模块

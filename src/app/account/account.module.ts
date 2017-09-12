@@ -5,12 +5,15 @@ import {LoginService} from './login/login.service';
 import {LoginComponent} from "./login/login.component";
 import {BsModalService, ModalModule} from "ngx-bootstrap";
 import {FormsModule} from "@angular/forms";
+import {RouterModule} from "@angular/router";
+import {accountRoute} from "./account.route";
 
 @NgModule({
   imports: [
     CommonModule,
     ModalModule.forRoot(),
-    FormsModule
+    FormsModule,
+    RouterModule.forChild(accountRoute)
   ],
   declarations: [
     LoginComponent
@@ -21,7 +24,8 @@ import {FormsModule} from "@angular/forms";
     BsModalService
   ],
   exports: [
-    LoginComponent
+    LoginComponent,
+    RouterModule
   ]
 })
 export class AccountModule { }

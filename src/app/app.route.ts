@@ -10,13 +10,13 @@ import {AdminComponent} from "./admin/admin.component";
 export const router: Routes = [
   {
     path: '',
-    component: HomeComponent,
-    outlet: "primary"
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
     path: 'home',
     component: HomeComponent,
-    outlet: "primary"
+    outlet: "primary",
   },
   {
     path: 'article',

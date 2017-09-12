@@ -1,8 +1,8 @@
 import {Component, OnInit, TemplateRef} from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import {BsModalRef} from "ngx-bootstrap";
-import {AboutComponent} from "../../front/layout/navbar/about/about.component";
 import {DataService} from "../../utils/data.service";
+import {ActivatedRoute} from "@angular/router";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -15,7 +15,13 @@ export class LoginComponent implements OnInit {
   rememberMe: boolean;//记着密码
   bsModalRef: BsModalRef;
   constructor(private modalService: BsModalService,
-              private dataService: DataService) {}
+                private dataService: DataService,
+                private route: ActivatedRoute
+  ) {
+    this.username=this.route.params["value"].name;
+    this.password = this.route.params["value"].password;
+
+  }
   ngOnInit() {
 
   }
