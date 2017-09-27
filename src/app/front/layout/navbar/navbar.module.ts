@@ -7,17 +7,19 @@ import {InteractionComponent} from "./interaction/interaction.component";
 import {RouterModule} from "@angular/router";
 import {router} from "../../../app.route";
 import {ShareComponent} from "./share/share.component";
+import {ContentComponent} from "./home/content/content.component";
+import {HomeModule} from "./home/home.module";
 
 @NgModule({
   imports: [
     CommonModule,
+    HomeModule
   ],
   declarations: [
     AboutComponent,
-    HomeComponent,
     ArticleComponent,
     InteractionComponent,
-    ShareComponent
+    ShareComponent,
   ]
 })
 export class NavbarModule { }

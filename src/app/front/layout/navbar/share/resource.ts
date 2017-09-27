@@ -1,11 +1,10 @@
-class Resource {
+export class Resource {
+  public rid: string;
+  public title: string;
+  public username: string;
+  public description: string;
+  public downloadNumber:number;
+  public downloadUrl: string;
   constructor(
-    public id: string,
-    public title: string,
-    public uploadTime: any,
-    public downloadNumber:number,
-    public downloadUrl: string,
-    public username: string,
-    public descript: string,
   ){}
 }

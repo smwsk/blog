@@ -1,45 +1,33 @@
-<nav class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-              aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" [routerLink]="['/']">Blog</a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a [routerLink]="[{outlets:{primary:'home'}}]">网站首页</a></li>
-        <li><a [routerLink]="[{outlets:{primary:'article'}}]">文章列表</a></li>
-        <li><a [routerLink]="[{outlets:{primary:'share'}}]">共享中心</a></li>
-        <li><a [routerLink]="[{outlets:{primary:'interaction'}}]">交流互动</a></li>
-        <li><a [routerLink]="[{outlets:{primary:'about'}}]">关于网站</a></li>
-        <li><a (click)="goApplicationDetail()">后台管理1</a></li>
-      </ul>
-      <!--右侧下拉框-->
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <span>
-            <i class="fa fa-user" aria-hidden="true"></i> 账号
-            </span>
-            <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" (click)="login()" id="login">
-                <i class="fa fa-fw fa-sign-in" aria-hidden="true"></i>登录
-              </a>
-            </li>
-            <!--<li role="separator" class="divider"></li>-->
-            <li>
-              <a href="#"><i class="fa fa-fw fa-registered" aria-hidden="true"></i>注册</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.nav-collapse -->
-  </div><!-- /.container -->
-</nav><!-- /.navbar -->
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" [routerLink]="['/']">Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="[{outlets:{primary:'home'}}]">网站首页</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[{outlets:{primary:'article'}}]">文章列表</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[{outlets:{primary:'share'}}]">共享中心</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[{outlets:{primary:'interaction'}}]">交流互动</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[{outlets:{primary:'about'}}]">关于网站</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[{outlets:{primary:'admin'}}]">后台管理</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="login()">登录</a>
+      </li>
+      <!--<li><a (click)="goApplicationDetail()">测试路由传参数</a></li>-->
+    </ul>
+  </div>
+</nav>
